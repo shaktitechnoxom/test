@@ -1,5 +1,4 @@
 language: php
 php:
-  - '5.4'
   - '7.0'
 script: php phpunit-5.7.4.phar --bootstrap vendor/autoload.php tests/MoneyTest
