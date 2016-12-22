@@ -1,20 +1,21 @@
 <?php
-use PHPUnit\Framework\TestCase;
-
-class MoneyTest extends TestCase
+class Money
 {
-    // ...
+    private $amount;
 
-    public function testCanBeNegated()
+    public function __construct($amount)
     {
-        // Arrange
-        $a = new Money(1);
+        $this->amount = $amount;
+    }
 
-        // Act
-        $b = $a->negate();
+    public function getAmount()
+    {
+        return $this->amount;
+    }
 
-        // Assert
-        $this->assertEquals(-1, $b->getAmount());
+    public function negate()
+    {
+        return new Money(-1 * $this->amount);
     }
 
     // ...

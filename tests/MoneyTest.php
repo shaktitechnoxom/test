@@ -1,6 +1,7 @@
 <?php
+require(__DIR__.'/../vendor/autoload.php');
+require(__DIR__.'/../src/Money.php');
 use PHPUnit\Framework\TestCase;
-
 class MoneyTest extends TestCase
 {
     // ...

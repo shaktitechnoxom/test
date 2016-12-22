@@ -2,4 +2,4 @@ language: php
 php:
   - '5.4'
   - '7.0'
-script: phpunit --bootstrap src/autoload.php tests/MoneyTest
+script: php phpunit-5.7.4.phar --bootstrap vendor/autoload.php tests/MoneyTest
